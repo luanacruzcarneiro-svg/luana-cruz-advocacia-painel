@@ -1,0 +1,3 @@
+# Instruções do projeto
+
+Leia `kit/KIT-CANDIA-V2.md` e `docs/00-LEIA-PRIMEIRO.md` antes de mudanças. Use as skills do projeto em `.agents/skills/`: `candia-construir` para implementação, `candia-validar` para homologação, `candia-retomar` para continuidade e `candia-diagnosticar` somente para novas decisões materiais de operação. Preserve as funções existentes e consulte `docs/ESTADO.md`, `docs/DECISOES.md` e `docs/BACKLOG.md`. Não publique segredos, dados reais ou imagens de clientes. Não aplique custos nem alterações irreversíveis sem autorização específica.

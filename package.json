@@ -1,0 +1,31 @@
+{
+  "name": "luana-cruz-advocacia-painel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Painel interno com autenticação de usuário e persistência no servidor",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "user:add": "node scripts/create-user.js",
+    "db:migrate": "node scripts/migrate.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "better-sqlite3": "^12.4.1",
+    "connect-pg-simple": "^10.0.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "railway": "^3.17.0"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true
+  }
+}

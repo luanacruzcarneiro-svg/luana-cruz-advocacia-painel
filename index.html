@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR" data-server-mode="false">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbf7f2" />
+  <title>Luana Cruz Advocacia · Gestão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#inicio" aria-label="Luana Cruz Advocacia, início">
+        <span class="brand-logo-frame"><img src="assets/logo-luana-cruz-transparent.png" alt="Luana Cruz Advocacia"></span>
+      </a>
+      <div class="workspace-label">ESCRITÓRIO</div>
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="inicio"><span class="nav-icon">⌂</span> Visão geral</button>
+        <button class="nav-item" data-view="leads"><span class="nav-icon">◉</span> Leads <span class="nav-count" id="leadCount">0</span></button>
+        <button class="nav-item" data-view="processos"><span class="nav-icon">▤</span> Processos</button>
+        <button class="nav-item" data-view="tarefas"><span class="nav-icon">☷</span> Tarefas <span class="nav-count" id="taskCount">0</span></button>
+        <button class="nav-item" data-view="agenda"><span class="nav-icon">▦</span> Agenda <span class="nav-dot"></span></button>
+        <div class="nav-divider"></div>
+        <div class="workspace-label">FERRAMENTAS</div>
+        <button class="nav-item" data-view="documentos"><span class="nav-icon">▧</span> Documentos</button>
+        <button class="nav-item" data-view="teses"><span class="nav-icon">§</span> Teses e peças</button>
+        <button class="nav-item" data-view="campanhas"><span class="nav-icon">◈</span> Campanhas</button>
+        <button class="nav-item" data-view="conexoes"><span class="nav-icon">⌘</span> Conexões</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-spark">✦</span><strong>Precisa de ajuda?</strong><p>Organize seu fluxo de atendimento em poucos passos.</p><button data-view="conexoes">Ver conexões <span>↗</span></button></div>
+        <div class="profile"><div class="avatar">LC</div><div><strong>Luana Cruz</strong><small>Administradora</small></div><button class="more-button" aria-label="Mais opções">···</button></div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="breadcrumb"><span>Escritório</span><b>/</b><strong id="crumb">Visão geral</strong></div><div class="top-actions"><span class="today" id="today"></span><button class="icon-button" aria-label="Notificações">♧<i></i></button><button id="logoutButton" class="btn btn-outline" data-action="logout" hidden>Sair</button><div class="top-avatar">LC</div></div></header>
+      <div class="content" id="content"></div>
+      <footer class="footer">LUANA CRUZ ADVOCACIA <span>•</span> PAINEL INTERNO</footer>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"><section class="modal" id="modal" role="dialog" aria-modal="true"></section></div>
+  <div class="toast" id="toast"></div>
+  <script src="workflow.js"></script>
+  <script src="tasks.js"></script>
+  <script src="app.js"></script>
+  <script src="movement-workflow.js"></script>
+</body>
+</html>

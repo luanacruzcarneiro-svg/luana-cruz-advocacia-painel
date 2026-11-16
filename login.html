@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7f2"><title>Acesso · Luana Cruz Advocacia</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-card">
+      <img src="/assets/logo-luana-cruz-transparent.png" alt="Luana Cruz Advocacia" class="login-logo">
+      <p class="eyebrow">ACESSO RESTRITO</p><h1>Bem-vinda</h1>
+      <p class="subtitle">Entre com seu usuário e senha cadastrados pelo administrador.</p>
+      <form id="loginForm">
+        <label for="username">Usuário</label><input id="username" name="username" autocomplete="username" required>
+        <label for="password">Senha</label><input id="password" name="password" type="password" autocomplete="current-password" required>
+        <p class="login-error" id="loginError" role="alert"></p>
+        <button type="submit" id="loginButton">Entrar no painel</button>
+      </form>
+      <small class="privacy-note">Acesso individual. Não compartilhe sua senha.</small>
+    </section>
+  </main>
+  <script src="login.js" defer></script>
+</body>
+</html>
